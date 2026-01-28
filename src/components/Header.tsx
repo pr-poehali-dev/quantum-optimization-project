@@ -1,51 +1,50 @@
-import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center gap-2">
-        <ФинПотокLogo />
-        <span className="text-lg font-semibold text-white">
-          ФинПоток<sup className="text-xs">™</sup>
+        <CubeGamesLogo />
+        <span className="text-xl font-bold text-white">
+          Cube Games
         </span>
       </div>
 
       <nav className="hidden md:flex items-center gap-8">
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Продукты
+        <a href="#about" className="text-sm text-gray-300 hover:text-purple-400 transition-colors">
+          О клубе
         </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
-          Решения <ChevronDown className="h-4 w-4" />
+        <a href="#advantages" className="text-sm text-gray-300 hover:text-purple-400 transition-colors">
+          Преимущества
         </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Ресурсы
+        <a href="#reviews" className="text-sm text-gray-300 hover:text-purple-400 transition-colors">
+          Отзывы
         </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Тарифы
+        <a href="#gallery" className="text-sm text-gray-300 hover:text-purple-400 transition-colors">
+          Галерея
         </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+        <a href="#contacts" className="text-sm text-gray-300 hover:text-purple-400 transition-colors">
           Контакты
         </a>
       </nav>
 
       <Button
         variant="outline"
-        className="rounded-full border-violet-500 text-violet-400 hover:bg-violet-500/10 hover:text-violet-300 bg-transparent"
+        className="rounded-full border-purple-500 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300 bg-transparent"
       >
-        Запросить демо
+        Забронировать ПК
       </Button>
     </header>
   )
 }
 
-function ФинПотокLogo() {
+function CubeGamesLogo() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="3" fill="#8B5CF6" />
-      <circle cx="16" cy="8" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="8" cy="16" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="16" cy="16" r="3" fill="#8B5CF6" opacity="0.4" />
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="3" width="8" height="8" fill="#A855F7" />
+      <rect x="13" y="3" width="8" height="8" fill="#A855F7" opacity="0.7" />
+      <rect x="3" y="13" width="8" height="8" fill="#A855F7" opacity="0.7" />
+      <rect x="13" y="13" width="8" height="8" fill="#A855F7" opacity="0.5" />
     </svg>
   )
 }
